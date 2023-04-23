@@ -1,0 +1,87 @@
+### get all category
+
+GET http://localhost:4000/api/category HTTP/1.1
+
+
+### get single category details only
+
+GET http://localhost:4000/api/category/113 HTTP/1.1
+
+
+### add category list
+
+POST http://localhost:4000/api/category HTTP/1.1
+Content-Type: application/json
+
+{
+   "categoryName":"Sustainable",
+    "description":"Get Sustainable product",
+    "categoryId":"116"
+}
+
+### update category
+
+PUT  http://localhost:4000/api/category/113 HTTP/1.1
+Content-Type: application/json
+
+{
+   "categoryName":"Sustainable",
+    "description":"Get Sustainable products",
+    "categoryId":"116"
+}
+
+
+### Delete category
+
+DELETE http://localhost:4000/api/category/116 HTTP/1.1
+
+
+
+
+
+
+
+
+
+
+### get all product
+
+GET http://localhost:4000/api/products/category/113?limit=5&page=2 HTTP/1.1
+
+
+### get single product
+
+GET http://localhost:4000/api/products/1 HTTP/1.1
+
+
+### add product item
+
+POST http://localhost:4000/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+ "productName":"Glass Containers",
+  "description":"Glass Containers",
+  "categoryId": "116",
+  "productId": "314"
+}
+
+
+
+### update product
+
+PUT  http://localhost:4000/api/products/1 HTTP/1.1
+Content-Type: application/json
+
+{
+     "productName":"Disposable Biogradable Gloves gloves",
+  "description":"Disposable Biogradable Gloves gloves",
+  "categoryId": "113",
+  "productId": "1"
+}
+
+
+### Delete product
+
+DELETE http://localhost:4000/api/products/204 HTTP/1.1
+
