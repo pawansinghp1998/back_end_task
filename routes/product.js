@@ -1,4 +1,4 @@
-//product api model
+//product api route
 const router = require("express").Router();
 const productController = require("../controllers/productController");
 

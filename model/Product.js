@@ -1,3 +1,5 @@
+//product api model
+
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({

@@ -1,4 +1,4 @@
-//category api model
+//category api route
 
 const router = require("express").Router();
 const categoryController = require("../controllers/categoryController");
